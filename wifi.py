@@ -35,8 +35,7 @@ while True:
 	lines=devices.split("\n")
 	devices=nicer(lines)
 	for device in devices:
-		a=device[0].strip().split()
-		a=a[len(a)-1:]
+		a=device[5].strip().split()
 		if a not in a_log:
 			a_log.append(a)
 			print ("\n".join(device))
